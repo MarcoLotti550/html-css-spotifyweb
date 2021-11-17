@@ -1,6 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 /* visualizzazione mobile */
-@media screen and (max-width: 637px) {
+@media screen and (max-width: 552px) {
     *{
         margin: 0%;
         padding: 0%;
@@ -81,9 +81,9 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        width: calc(100%);
+        width: calc(100% - 35px);
         min-height: 80px;
-        background-color: #1c3b4d9a;
+        background-color: #1c3b4dea;
     }
     .button-upgrade{
         font-size: 12px;
@@ -95,34 +95,71 @@
         margin-right: 5px;
     }
 /* sezione main */
-.container{
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: -1;
-    width: calc(100% - 35px);
-    height: 100vh;
-    background-color:#121212;
-}
-.categorie{
-    position: relative;
-    top: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.categorie ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-.categorie ul li{
-    margin: 10px 10px ;
-    font-size: 12px;
-    color: gray;
-    font-weight: bold;
-}
+    .container{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        z-index: -1;
+        width: calc(100% - 35px);
+        min-height: 100vh;
+        background-color:#121212;
+    }
+    .categorie{
+        position: relative;
+        top: 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .categorie ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .categorie ul li{
+        margin: 10px 10px ;
+        font-size: 12px;
+        color: gray;
+        font-weight: bold;
+    }
 /* sezione playlist */
+    .container-playlist{
+        position: relative;
+        top: 120px;
+        right: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 95%;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
+    .playlist img{
+        width: 200px;
+    }
+    .playlist{
+        text-align: center;
+    }
+    .recently{
+        position: relative;
+        top: 100px;
+        width: calc(100% - 35px);
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff
+    }
+    .title{
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #fff
+    }
+    .author{
+        font-size: 10px;
+        color: gray;
+        margin: 10px 0;
+    }
 
 /* nav musica */
     .nav-musica{
