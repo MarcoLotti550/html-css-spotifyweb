@@ -1,26 +1,33 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
 /* visualizzazione mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 637px) {
     *{
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
         text-decoration: none;
-        list-style: none;
+        font-family: 'gotham';
     }
     header{
         display: flex;
         justify-content: flex-start;
         position: fixed;
         z-index: 2;
-        width: 30px;
-        min-height: 90vh;
+        width: 35px;
+        min-height:calc(100% - 70px);
         background-color: #000;
+    }
+    nav ul li{
+        list-style-type: none;
     }
     header nav{
         display: flex;
         flex-direction: column;
         width: 100%;
         min-height: 100%;
+    }
+    nav ul img:hover{
+        cursor: pointer;
     }
     .mini-logo{
         display: flex;
@@ -34,19 +41,21 @@
     }
     .img-download{
         width: 12px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        margin-right: 2px;
     }
     .profile-nav{
         width: 20px;
     }
     .icon-profile{
-        width: 25px;
-        height: 25px;
+        width: 22px;
+        height: 22px;
         line-height: 25px;
         background-color: grey;
         border-radius: 100%;
         text-align: center;
         overflow: hidden;
+        margin-bottom: 3px;
     }  
     .bot-nav{
         width: 100%;
@@ -63,16 +72,45 @@
         flex-direction: column;
         align-items: center;
     }    
-  
+/* sezione top upgrade */
+    .upgrade{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        width: calc(100% - 35px);
+        min-height: 80px;
+        background-color: #1c3b4dbe;
+    }
+    .button-upgrade{
+        font-size: 12px;
+        font-weight: bold;
+        color: #fff;
+        padding: 10px 20px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        margin-right: 5px;
+    }
+/* sezione main */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:#121212;
+}
 
-    /* nav musica */
+/* nav musica */
     .nav-musica{
+        display: flex;
+        align-content: center;
         position: fixed;
         bottom: 0%;
         left: 0%;
         z-index: 3;
         width: 100%;
-        min-height: 10vh;
-        background-color: rgb(48, 48, 48);
+        min-height: 70px;
+        background-color: #181818;
     }
+
 }
