@@ -1,12 +1,17 @@
 @import url('http://fonts.cdnfonts.com/css/gotham');
 /* visualizzazione mobile */
-@media screen and (max-width: 552px) {
+@media screen and (min-width: 552px) {
     *{
         margin: 0%;
         padding: 0%;
         box-sizing: border-box;
         text-decoration: none;
         font-family: 'gotham';
+    }
+    body{
+        width: 100%;
+        min-height: calc(100% - 70px);
+        background-color: #121212;
     }
     header{
         display: flex;
@@ -27,7 +32,8 @@
         min-height: 100%;
     }
     nav ul img,
-    .button-upgrade:hover{
+    .button-upgrade,
+    .categorie ul li:hover{
         cursor: pointer;
     }
     .mini-logo{
@@ -101,8 +107,6 @@
         right: 0%;
         z-index: -1;
         width: calc(100% - 35px);
-        min-height: 100vh;
-        background-color:#121212;
     }
     .categorie{
         position: relative;
@@ -134,10 +138,15 @@
         min-height: 100vh;
         margin: 0 auto;
     }
-    .playlist img{
+    .playlist img,
+    .create img,
+    .popular img{
         width: 200px;
+        height: 200px;
     }
-    .playlist{
+    .playlist,
+    .create,
+    .popular{
         text-align: center;
     }
     .recently{
@@ -160,7 +169,66 @@
         color: gray;
         margin: 10px 0;
     }
-
+/* sezione create per te */
+    .container-create{
+        position: relative;
+        top: 170px;
+        right: 0%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 95%;
+        margin: -20px auto;
+    }
+    .create-title{
+        position: relative;
+        top: 130px;
+        width: calc(100% - 35px);
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff
+    }
+    .create-sub-title{
+        position: relative;
+        top: 130px;
+        width: calc(100% - 35px);
+        margin: 10px auto;
+        font-size: 10px;
+        color: grey;
+    }
+/* sezione popolare */
+    .container-popular{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        top: 250px;
+        width: calc(100% - 35px);
+        height: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    .popular-title{
+        position: relative;
+        top: 220px;
+        width: calc(100% - 35px);
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .popular-sub-title{
+        position: relative;
+        top: 230px;
+        width: calc(100% - 35px);
+        margin: 0 auto;
+        font-size: 10px;
+        color: grey;
+    }
+    .popular img{
+        border-radius: 50%;
+    }
 /* nav musica */
     .nav-musica{
         display: flex;
